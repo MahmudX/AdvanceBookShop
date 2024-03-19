@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .result-item:hover{
+        background-color: #e9ecef;
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Search book</h1>
+    <div class="position-relative">
+        <input placeholder="Search by title" id="searchInput" class="form-control"/>
+        <div class="position-absolute p-3" id="searchResultContainer">
+              
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script>
+    
+    // https://picsum.photos/seed/${item.title}/75/100
+    
+        $(document).ready(function () {
+            $("#searchInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                const searchUrl = "/api/book/searchbook?query=";
+                $.ajax({
+                    url: searchUrl + value,
+                    type: "GET",
+                    success: function (result) {
+                        $("#searchResultContainer").empty();
+                        $.each(result, function (key, item) {
+                            $("#searchResultContainer")
+                            .append(
+                                `<a class="result-item d-flex flex-row text-decoration-none mb-2 text-black" href="/book/details?id=${item.id}">
+                                                <img alt="" src="${item.imageUrl}" class="img-thumbnail" height="75px" width="100px"/>
+                                                <div class="d-flex flex-column ms-3 align-content-start">
+                                                    <h2 class="fw-bold align-self-start"> ${item.title} </h2>
+                                                    <h3 class="align-self-start"> ${item.author} </h3>
+                                                    <h5 class="align-self-start">${item.price}৳</h5>
+                                                </div>
+                                            </a>
+                                `
+                            )
+                        });
+                        
+                         if (result.length == 0) {
+                            $("#searchResultContainer")
+                            .append(
+                                `
+                                <div class="d-flex flex-column ms-3 align-content-start">
+                                                    <h2 class="fw-bold align-self-start"> No result found </h2>
+                                                </div>
+                                `
+                            )
+                        }
+                        
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+}
