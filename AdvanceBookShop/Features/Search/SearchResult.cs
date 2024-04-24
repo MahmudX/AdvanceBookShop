@@ -1,6 +1,6 @@
 using Lucene.Net.Documents;
 
-namespace LuceneBookShop.Features.Search;
+namespace AdvanceBookShop.Features.Search;
 
 public class SearchResult
 {

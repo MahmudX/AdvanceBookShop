@@ -1,9 +1,9 @@
 using Lucene.Net.Documents;
 using Lucene.Net.Index;
 using System.Globalization;
-using LuceneBookShop.Models;
+using AdvanceBookShop.Models;
 
-namespace LuceneBookShop.Features.Search;
+namespace AdvanceBookShop.Features.Search;
 
 public class SearchableBook
 {

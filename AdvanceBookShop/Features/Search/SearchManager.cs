@@ -6,7 +6,7 @@ using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucene.Net.Util;
 
-namespace LuceneBookShop.Features.Search;
+namespace AdvanceBookShop.Features.Search;
 
 public class SearchManager : ISearchManager
 {

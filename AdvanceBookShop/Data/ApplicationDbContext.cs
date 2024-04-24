@@ -1,7 +1,7 @@
-using LuceneBookShop.Models;
+using AdvanceBookShop.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace LuceneBookShop.Data;
+namespace AdvanceBookShop.Data;
 
 public class ApplicationDbContext : DbContext
 {

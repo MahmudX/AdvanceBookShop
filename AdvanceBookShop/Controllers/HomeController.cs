@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
-using LuceneBookShop.Data;
-using LuceneBookShop.Features.Search;
+using AdvanceBookShop.Data;
+using AdvanceBookShop.Features.Search;
 using Microsoft.AspNetCore.Mvc;
-using LuceneBookShop.Models;
+using AdvanceBookShop.Models;
 
-namespace LuceneBookShop.Controllers;
+namespace AdvanceBookShop.Controllers;
 
 public class HomeController : Controller
 {

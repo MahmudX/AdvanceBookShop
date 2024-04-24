@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace LuceneBookShop.Migrations
+namespace AdvanceBookShop.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

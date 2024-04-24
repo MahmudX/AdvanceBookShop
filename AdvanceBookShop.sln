@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuceneBookShop", "LuceneBookShop\LuceneBookShop.csproj", "{730FA85B-28CF-4A4E-8C02-FD2F6783ABB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvanceBookShop", "AdvanceBookShop\AdvanceBookShop.csproj", "{730FA85B-28CF-4A4E-8C02-FD2F6783ABB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

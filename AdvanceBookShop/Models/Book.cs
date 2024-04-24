@@ -1,4 +1,4 @@
-namespace LuceneBookShop.Models;
+namespace AdvanceBookShop.Models;
 
 public class Book
 {

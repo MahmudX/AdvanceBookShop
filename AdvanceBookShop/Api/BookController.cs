@@ -1,9 +1,9 @@
-using LuceneBookShop.Data;
-using LuceneBookShop.Features.Search;
-using LuceneBookShop.Models;
+using AdvanceBookShop.Data;
+using AdvanceBookShop.Features.Search;
+using AdvanceBookShop.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LuceneBookShop.Api;
+namespace AdvanceBookShop.Api;
 
 [ApiController]
 [Route("api/[controller]/[action]")]

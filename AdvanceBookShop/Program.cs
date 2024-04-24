@@ -1,5 +1,5 @@
-using LuceneBookShop.Data;
-using LuceneBookShop.Features.Search;
+using AdvanceBookShop.Data;
+using AdvanceBookShop.Features.Search;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
